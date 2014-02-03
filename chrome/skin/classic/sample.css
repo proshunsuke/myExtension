@@ -1,0 +1,8 @@
+#sampleButton {
+    list-style-image:
+        url(chrome://sample/skin/icon-big.png);
+}
+toolbar[iconsize="small"] #sampleButton {
+    list-style-image:
+        url(chrome://sample/skin/icon-small.png);
+}

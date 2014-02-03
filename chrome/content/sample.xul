@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<overlay id="sample"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <commandset id="mainCommandSet">
+    <command id="sampleCommand"
+             oncommand="window.openDialog(
+                        'chrome://sample/content/clock.xul',
+                        'Clock','chrome,centerscreen,modal');" />
+  </commandset>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="sampleButton"
+                   label="Hello, World!"
+                   class="toolbarbutton-1"
+                   tooltiptext="sample button"
+                   command="sampleCommand" />
+  </toolbarpalette>
+
+  <statusbar id="status-bar">
+    <statusbarpanel id="my-panel" label="Hello, World"/>
+  </statusbar>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="sampleMenuitem"
+              label="Hello, World!"
+              insertbefore="devToolsSeparator"
+              command="sampleCommand"
+              />
+  </menupopup>
+
+</overlay>

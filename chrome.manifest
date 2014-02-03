@@ -1,0 +1,7 @@
+content sample jar:chrome/sample.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://sample/content/sample.xul
+locale sample en-US jar:chrome/sample.jar!/locale/en-US/
+locale sample ja-JP jar:chrome/sample.jar!/locale/ja-JP/
+skin sample classic/1.0 jar:chrome/sample.jar!/skin/classic/
+style chrome://browser/content/browser.xul chrome://sample/skin/sample.css
+style chrome://global/content/customizeToolbar.xul chrome://sample/skin/sample.css
